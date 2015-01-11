@@ -84,13 +84,13 @@ define('APP_MAIL_ADMIN', 'fill in!');
 define('APP_MAIL_SUPPORT', 'fill in!');
 {% endhighlight %}
 
-The `APP\_DB\_\*` constants contain the name, user, password, and host of your database. Currently only "mysql" is fully supported as type, so don't change this.
+The `APP_DB_\*` constants contain the name, user, password, and host of your database. Currently only "mysql" is fully supported as type, so don't change this.
 
-The `APP\_MAIL\_\*` constants contain mail addresses:
+The `APP_MAIL_\*` constants contain mail addresses:
 
-- `APP\_MAIL\_SENDER`: The mail address to be used as sender by default, when sending mail.
-- `APP\_MAIL\_ADMIN`: The admin's mail address. This mail gets system mails send.
-- `APP\_MAIL\_SUPPORT`: Mail for contacts, feedback, and everything that involves real people.
+- `APP_MAIL_SENDER`: The mail address to be used as sender by default, when sending mail.
+- `APP_MAIL_ADMIN`: The admin's mail address. This mail gets system mails send.
+- `APP_MAIL_SUPPORT`: Mail for contacts, feedback, and everything that involves real people.
 
 ### More configuration options
 
