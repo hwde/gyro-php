@@ -1,0 +1,26 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Gyro-PHP
+tagline:          'PHP Application Framework'
+description:      ''
+url:              http://gerdriesselmann.github.io/gyro-php/
+baseurl:          /
+
+author:
+  name:           'Gyro-PHP'
+  url:            http://gerdriesselmann.github.io/gyro-php/
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/gerdriesselmann/gyro-php

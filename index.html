@@ -1,0 +1,47 @@
+---
+layout: default
+title: Home
+---
+
+<div class="message">
+    Gyro-PHP is a PHP application framework offering Model-View-Controller (MVC) pattern.
+    It also comes with an extensive behavior layer based upon the command design pattern.
+</div>
+
+<div class="posts">
+    <div class="post">
+        <h2 class="post-title">
+            <a href="/about/">
+                Abount Gyro-PHP
+            </a>
+        </h2>
+        <p>Short overview on what it does</p>
+    </div>
+  {% for post in paginator.posts reversed %}
+  <div class="post">
+    <h2 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+    <p>{{ post.description }}</p>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
