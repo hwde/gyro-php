@@ -11,7 +11,7 @@ title: Home
 <div class="posts">
     <div class="post">
         <h2 class="post-title">
-            <a href="/about/">
+            <a href="{{ site.baseurl }}about/">
                 Abount Gyro-PHP
             </a>
         </h2>
@@ -20,7 +20,7 @@ title: Home
   {% for post in paginator.posts reversed %}
   <div class="post">
     <h2 class="post-title">
-      <a href="{{ post.url }}">
+      <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a>
     </h2>

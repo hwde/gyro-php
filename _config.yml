@@ -11,7 +11,7 @@ title:            Gyro-PHP
 tagline:          'PHP Application Framework'
 description:      ''
 url:              http://gerdriesselmann.github.io/gyro-php/
-baseurl:          /
+baseurl:          /gyro-php
 
 author:
   name:           'Gyro-PHP'
